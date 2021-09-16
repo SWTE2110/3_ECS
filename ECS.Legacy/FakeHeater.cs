@@ -8,8 +8,8 @@ namespace ECS.Legacy
     public class FakeHeater : IHeater
     {
 
-        private bool _CheckTurnOn = false;
-        private bool _CheckTurnOff = false;
+        public bool _CheckTurnOn = false;
+        public bool _CheckTurnOff = false;
 
         public void TurnOn() { _CheckTurnOn = true; }
         public void TurnOff() { _CheckTurnOff = true; }
