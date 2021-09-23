@@ -23,10 +23,10 @@ namespace ECS.Test
         }
 
         [Test]
-        public void HeaterTurnsOff()
+        public void RegulateHeaterTurnsOff()
         {
 
-            _tempSub.GetTemp().Returns(28);
+            _tempSub.GetTemp().Returns(31);
             uut.Regulate();
 
             _heaterSub.Received().TurnOff();
@@ -35,9 +35,9 @@ namespace ECS.Test
         }
 
         [Test]
-        public void HeaterTurnsOn()
+        public void RegulateHeaterTurnsOn()
         {
-            _tempSub.GetTemp().Returns(31);
+            _tempSub.GetTemp().Returns(28);
             uut.Regulate();
 
             _heaterSub.Received().TurnOn();
