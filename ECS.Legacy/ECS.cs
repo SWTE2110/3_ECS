@@ -5,14 +5,14 @@ namespace ECS.Legacy
     public class ECS
     {
         private int _threshold;
-        private readonly TempSensor _tempSensor;
-        private readonly Heater _heater;
+        private readonly ITempSensor _tempSensor;
+        private readonly IHeater _heater;
 
-        public ECS(int thr)
+        public ECS(int thr, ITempSensor sensor, IHeater heater)
         {
             SetThreshold(thr);
-            _tempSensor = new TempSensor();
-            _heater = new Heater();
+            _tempSensor = sensor;
+            _heater = heater;
         }
 
         public void Regulate()
