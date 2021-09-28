@@ -5,7 +5,12 @@ VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECS.Legacy", "ECS.Legacy\ECS.Legacy.csproj", "{04BB7A61-C926-4654-A911-EA7EAE974326}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECS.Test", "ECS.Test\ECS.Test.csproj", "{19FEB661-F179-4077-878C-E4A55357F631}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECS.Test", "ECS.Test\ECS.Test.csproj", "{19FEB661-F179-4077-878C-E4A55357F631}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9EC4CE12-850D-4CB9-96B3-96C92D3BDD52}"
+	ProjectSection(SolutionItems) = preProject
+		dotCoverCoverageConfigCore.xml = dotCoverCoverageConfigCore.xml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
